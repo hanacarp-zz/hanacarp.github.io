@@ -19,5 +19,35 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="page-intro-background xs-absolute sm-l0 sm-r0 xs-hide sm-inline-block md-inline-block lg-inline-block"></div>
+		<section class="page-intro">
+			<div class="container">
+					<h1 class="page-intro__title xs-text-5 caps text-white xs-py1 xs-px2 xs-mt3 sm-mt5 xs-mb3 sm-mb2 md-mb3 fw-eb xs-hide sm-inline-block">Advertise with BuzzFeed</h1>
+			</div>
+		</section>
+		
+		
+		<div class="container">
+				<div class="col xs-col-12 sm-col-10 md-offset-1 xs-mx-auto">
+					<section class="humans clearfix gutters xs-mb2 md-mb4 xs-p2 sm-py4 sm-px4 sm-text-center card">
+						<h1 class="md-text-center md-mb2">Reach the human behind the impression.</h1>
+						<a id="human1" class="humans-gif col md-col-3 selected" onclick="selectOne(this.id);"><img class="md-fit" src="images/angie_final.gif"></a>
+						<a id="human2" class="humans-gif col md-col-3" onclick="selectOne(this.id);"><img class="md-fit" src="images/essence_final.gif"></a>
+						<a id="human3" class="humans-gif col md-col-3" onclick="selectOne(this.id);"><img class="md-fit" src="images/jason_final.gif"></a>
+						<a id="human4" class="humans-gif col md-col-3" onclick="selectOne(this.id);"><img class="md-fit" src="images/liz_final_edited.gif"></a>
+						<div class="humans-text"></div>
+					</section>
+				</div>
+		</div>
 	</body>
+		<script type="text/javascript">
+		function selectOne(humanID) {
+		    var current = document.getElementsByClassName('selected')[0];
+		    current.classList.remove('selected');
+		    
+		    clicked = document.getElementById(humanID);
+		    clicked.classList.add('selected');
+		}
+	</script>
 </html>

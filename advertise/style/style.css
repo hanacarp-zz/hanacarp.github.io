@@ -1,19 +1,13 @@
 @import url("solid.2.6.2.css");
+@import url("solid-fonts.css");
 
-/* font faces */
 
-
-/* font weights */
+/* fonts */
 .fw-eb {
-  font-family: "ProximaNovaExtrabold";
-  letter-spacing: .06em; }
-
-.fw-bl {
-  font-family: "ProximaNovaBlack";
-  letter-spacing: .04em; }
-
-.extrabold {
-  font-family: "ProximaNovaExtrabold"; }
+	font-family: "Proxima Nova";
+	font-weight:bold;
+	letter-spacing: .06em;
+}
 
 
 /* navigation */
@@ -38,14 +32,86 @@ a.about-nav__logo{
 }
 
 .about-nav__links a:hover {
-      color: rgba(255, 255, 255, 0.75);
-      border-bottom: 3px solid rgba(255, 255, 255, 0.75); 
-     }
+	color: rgba(255, 255, 255, 0.75);
+	border-bottom: 3px solid rgba(255, 255, 255, 0.75); 
+}
 
 
-/* background image */
-.page-intro-background {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 22rem; }
+/* page introduction + background image */
+
+@media (min-width: 64rem) {
+ 	.container {
+ 		margin: 0px auto;
+ 		width: 1060px
+	} 
+}
+
+@media (min-width:52rem) {
+	.container {
+	    margin: 0px 20px;
+	}
+}
+
+@media (min-width:40rem) {
+	.container{
+		margin: 0px 16px;
+	}
+}
+
+.container{
+	 margin: 0px 12px;
+	 position: relative;
+	 width: auto;
+}
+
+.page-intro-background{
+	background-image: url("../images/WFM.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 22rem;
+	z-index:-1;
+}
+
+.page-intro__title{
+	background:linear-gradient(to right, #f1299b, #6645DD);
+}
+
+
+/* humans container */
+.humans-gif .selected{
+	opacity: 1 !important;
+}
+
+.humans-gif{
+	opacity: .3;
+	vertical-align: bottom;
+}
+
+.md-copy{
+	display:none;
+}
+
+.md-copy .selected{
+	display:inline-block;
+}
+
+/* breakpoints for human gifs */
+
+@media (min-width:52rem) {
+	.humans-gif {
+		display:inline-block;
+	}
+}
+
+@media (max-width:52rem) {
+	
+	.selected{
+		display:inline-block !important;
+	}
+	
+		.humans-gif {
+		display:none;
+	}
+}
+
