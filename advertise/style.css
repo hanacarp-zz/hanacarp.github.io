@@ -1,35 +1,6 @@
-@import url("http:/solid.buzzfeed.com/dist/solid.2.6.2.css");
+@import url("http://solid.buzzfeed.com/dist/solid.2.6.2.css");
 
 /* font faces */
-@font-face {
-  font-family: 'ProximaNovaExtrabold';
-  src: url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Extrabold-webfont.eot");
-  src: url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Extrabold-webfont.woff2") format("woff2"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Extrabold-webfont.woff") format("woff"), url("/static/fonts/ProximaNova-Extrabold-webfont.ttf") format("truetype"), url("https://www.buzzfeed.comstatic/fonts/ProximaNova-Extrabold-webfont.svg#ProximaNovaExtrabold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'ProximaNovaBlack';
-  src: url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Black-webfont.eot");
-  src: url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Black-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Black-webfont.woff2") format("woff2"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Black-webfont.woff") format("woff"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Black-webfont.ttf") format("truetype"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Black-webfont.svg#ProximaNovaBlack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-  @font-face {
-    font-family: "Proxima Nova";
-    src: url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Reg-webfont.eot");
-    src: url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Reg-webfont.woff.eot?#iefix") format("embedded-opentype"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Reg-webfont.woff") format("woff"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Reg-webfont.ttf") format("truetype"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Reg-webfont.svg#svgFontName") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal; }
-    
-  @font-face {
-    font-family: "Proxima Nova";
-    src: url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Sbold-webfont.eotf") format("eot");
-    src: url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Sbold-webfont.woff") format("woff"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Sbold-webfont.ttf") format("ttf"), url("https://www.buzzfeed.com/about/static/fonts/ProximaNova-Sbold-webfont.svg") format("svg");
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal; }
 
 
 /* font weights */
