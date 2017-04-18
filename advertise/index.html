@@ -29,25 +29,68 @@
 		
 		
 		<div class="container">
-				<div class="col xs-col-12 sm-col-10 md-offset-1 xs-mx-auto">
-					<section class="humans clearfix gutters xs-mb2 md-mb4 xs-p2 sm-py4 sm-px4 sm-text-center card">
-						<h1 class="md-text-center md-mb2">Reach the human behind the impression.</h1>
-						<a id="human1" class="humans-gif col md-col-3 selected" onclick="selectOne(this.id);"><img class="md-fit" src="images/angie_final.gif"></a>
-						<a id="human2" class="humans-gif col md-col-3" onclick="selectOne(this.id);"><img class="md-fit" src="images/essence_final.gif"></a>
-						<a id="human3" class="humans-gif col md-col-3" onclick="selectOne(this.id);"><img class="md-fit" src="images/jason_final.gif"></a>
-						<a id="human4" class="humans-gif col md-col-3" onclick="selectOne(this.id);"><img class="md-fit" src="images/liz_final_edited.gif"></a>
-						<div class="humans-text"></div>
+				<div class="col xs-col-12 md-col-10 md-offset-1 xs-mx-auto">
+					<section class="humans clearfix xs-mb2 md-mb4 xs-p2 sm-p0 sm-pt4 md-pb0 md-px0 md-text-center card xs-overflow-hidden">
+						
+						<div class="clearfix">
+						<h1 class="md-text-center xs-mb2 sm-text-left sm-text-2 md-text-2 lg-text-1 col sm-col-8 md-col-12 sm-px2">Reach the human behind the impression.</h1>
+						</div>
+						
+						<div class="clearfix">
+						<div id="leftarrow" class="xs-hide sm-inline-block md-hide col sm-col-1"></div>
+						
+						<a id="human1" class="humans-gif col md-col-3 sm-col-4 md-text-left selected" onclick="selectOne(this.id);"><img class="sm-fit xs-align-bottom" src="images/angie_final.gif"></a>
+						<div id="sm-human1-text" class="sm-human-text col sm-col-4 sm-inline-block xs-hide md-hide sm-text-left selected">
+							<h2 class="sm-text-3 sm-mb1">Just your brand, Human 1, and America's favorite podcast.</h2>
+							<p class="xs-text-4">We offer exclusive sponsorship opportunities alongside the web's most popular programming.</p>
+						</div>
+						<img id="sm-human1-img" class="sm-human-img col sm-col-4 sm-inline-block xs-hide md-hide sm-fit sm-text-left sm-align-top" src="images/iphone-se-hand.png">
+						
+						<a id="human2" class="humans-gif col md-col-3 sm-col-4" onclick="selectOne(this.id);"><img class="sm-fit xs-align-top" src="images/essence_final.gif"></a>
+						<div id="sm-human2-text" class="sm-human-text col sm-col-4 sm-inline-block xs-hide md-hide sm-text-left">
+							<h2 class="sm-text-3 sm-mb1">Just your brand, Human 2, and America's favorite podcast.</h2>
+							<p class="xs-text-4">We offer exclusive sponsorship opportunities alongside the web's most popular programming.</p>
+						</div>
+						
+						<a id="human3" class="humans-gif col md-col-3 sm-col-4 " onclick="selectOne(this.id);"><img class="sm-fit xs-align-bottom" src="images/jason_final.gif"></a>
+						<div id="sm-human3-text" class="sm-human-text col sm-col-4 sm-inline-block xs-hide md-hide sm-text-left">
+							<h2 class="sm-text-3 sm-mb1">Just your brand, Human 3, and America's favorite podcast.</h2>
+							<p class="sm-text-4">We offer exclusive sponsorship opportunities alongside the web's most popular programming.</p>
+						</div>
+						
+						
+						<a id="human4" class="humans-gif col md-col-3 sm-col-4 md-text-right" onclick="selectOne(this.id);"><img class="sm-fit xs-align-bottom" src="images/liz_final_edited.gif"></a>
+						<div id="sm-human4-text" class="sm-human-text col sm-col-4 sm-inline-block xs-hide md-hide sm-text-left">
+							<h2 class="sm-text-3 sm-mb1">Just your brand, Human 4, and America's favorite podcast.</h2>
+							<p class="xs-text-4">We offer exclusive sponsorship opportunities alongside the web's most popular programming.</p>
+						</div>
+						
+						<div id="rightarrow" class="col sm-col-1 xs-hide sm-inline-block md-hide"></div>
+						</div>
+						
+						
+						<div id="md-humans-description" class="clearfix col md-col-12 sm-hide md-inline-block xs-text-left fill-gray-darker xs-overflow-hidden">
+							<div id="md-human1-text" class="md-human-text col md-col-7 md-block xs-hide sm-hide text-white md-p2 md-fit selected">
+								<h2 class="md-text-3 lg-text-2 md-mb2">Just your brand, Human 1, and America's favorite podcast.</h2>
+								<p class="xs-text-4">We offer exclusive sponsorship opportunities alongside the web's most popular programming.</p>
+							</div>
+							<img id="md-human1-img" class="md-human-img col md-col-5 md-block xs-hide sm-hide md-fit selected" src="images/desktop.png">
+						</div>
 					</section>
 				</div>
 		</div>
 	</body>
 		<script type="text/javascript">
 		function selectOne(humanID) {
-		    var current = document.getElementsByClassName('selected')[0];
-		    current.classList.remove('selected');
+		    var currentHuman = document.getElementsByClassName('selected')[0];
+		    var currentText = document.getElementsByClassName('selected')[1];
+		    currentHuman.classList.remove('selected');
+		    currentText.classList.remove('selected');
 		    
-		    clicked = document.getElementById(humanID);
-		    clicked.classList.add('selected');
+		    clickedHuman = document.getElementById(humanID);
+		    clickedText = document.getElementById("sm-" + humanID + "-text");
+		    clickedHuman.classList.add('selected');
+		    clickedText.classList.add('selected');
 		}
 	</script>
 </html>
