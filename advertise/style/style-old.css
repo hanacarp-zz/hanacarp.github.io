@@ -77,12 +77,53 @@ a.about-nav__logo{
 	background:linear-gradient(to right, #f1299b, #6645DD);
 }
 
-.page-intro__description{
-	background: #ed21a3;
-    box-shadow: 12px 0 0 #ed21a3, -12px 0 0 #ed21a3;
-    line-height: 1.45 !important;
+
+/* humans container */
+.humans-gif.selected{
+	opacity: 1 !important;
 }
 
-#page-intro__title{
-	margin-left:12px;
+.humans-gif{
+	opacity: .3;
+	vertical-align: bottom;
 }
+
+.md-copy{
+	display:none;
+}
+
+.md-copy.selected{
+	display:inline-block;
+}
+
+
+/* breakpoints for human gifs */
+
+@media (min-width:52rem) {
+	.humans-gif {
+		display:inline-block;
+	}
+}
+
+@media (min-width:40rem) and (max-width:52rem) {
+	.sm-human-text.selected{
+		display:inline-block !important;
+	}
+	
+	.sm-human-text{
+		display:none !important;
+	}
+	
+}
+
+@media (max-width:52rem) {
+	
+	.humans-gif.selected{
+		display:inline-block !important;
+	}
+	
+		.humans-gif {
+		display:none;
+	}
+}
+
