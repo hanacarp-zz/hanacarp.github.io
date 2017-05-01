@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="style/style.css">
 	</head>
 	
-	<body>
+	<body class="fill-gray-lighter">
 		<div class="about-nav xs-fit fill-pink">
 			<div class="about-nav__content xs-pl2 xs-pr1 md-px3 xs-pt2 md-pt1 md-pb1 xs-relative">
 				<a class="about-nav__logo xs-inline-block xs-mb2 sm-mb2 md-m1">
@@ -21,10 +21,10 @@
 			</div>
 		</div>
 		
-		<div class="page-intro-background xs-absolute sm-l0 sm-r0 xs-hide sm-inline-block md-inline-block lg-inline-block"></div>
+		<div class="page-intro__background xs-absolute sm-l0 sm-r0 xs-hide sm-inline-block md-inline-block lg-inline-block"></div>
 		
 		<section class="page-intro xs-hide sm-inline-block sm-offset-1 sm-mt3">
-			<h1 class="sm-text-5 caps fill-pink text-white sm-py1 sm-px2 fw-eb">Advertise with BuzzFeed</h1>
+			<h1 class="page-intro__title sm-text-5 caps fill-pink text-white sm-py1 sm-px2 fw-eb">Advertise with BuzzFeed</h1>
 		</section>
 		
 		<div class="container xs-col-12 sm-col-10 sm-offset-1 xs-mt2">
@@ -34,10 +34,37 @@
 			</div>
 			
 			<div class="clearfix xs-mx-auto xs-mt3">
-				<div class="xs-mb2 md-mb4 xs-p2 sm-p0 sm-pt4 md-pb0 md-px0 md-text-center card xs-overflow-hidden">
-					
+				<div class="xs-mb2 md-mb4 xs-p0 sm-p0 sm-pt4 md-pb0 md-px0 md-text-center card xs-overflow-hidden">
+					<div class="clearfix flex xs-flex-column md-flex-row">
+						<div class="page-intro__text col md-col-6 xs-p2 sm-pl5">
+							<h2 class="xs-text-3 sm-text-2 extrabold text-gray-darker xs-text-left">Just your brand, <span class="text-pink">Chris</span>, and America's favorite podcast.</h2>
+							<p class="xs-text-5 sm-text-3 sm-mt2 xs-mt1 xs-text-left">We offer exclusive sponsorship opportunities alongside the web's most popular programming.</p>
+						</div>
+						
+						<div class="page-intro__gif xs-flex-grow-1 md-flex-align-center xs-flex-justify-end">
+							<img class="xs-fit xs-mx-auto xs-block" src="images/angie_final.gif">
+						</div>
+						
+						<!-- <div class="page-top__iphone col sm-col-4 sm-align-middle sm-overflow-hidden sm-fit sm-full-height">
+							<img class="xs-width-auto" src="images/iphone.png">
+						</div> -->
+					</div>
 				</div>
 			</div>
+			
+			<div class="page-intro__nav flex xs-flex-justify-center xs-mb4">
+				<div class="page-intro__navitem md-mx2 xs-hide md-inline xs-float-left selected circle fill-white"></div>
+				<div class="page-intro__navitem md-mr2 xs-hide md-inline xs-float-left circle fill-white"></div>
+				<div class="page-intro__navitem xs-hide md-inline xs-float-left circle fill-white"></div>
+				<div class="page-intro__navitem xs-hide md-mx2 md-inline xs-float-left circle fill-white"></div>
+	
+				<div class="page-intro__navdot xs-mx1 md-hide xs-inline circle fill-white selected"></div>
+				<div class="page-intro__navdot xs-mr1 md-hide xs-inline circle fill-white"></div>
+				<div class="page-intro__navdot md-hide xs-inline circle fill-white"></div>
+				<div class="page-intro__navdot md-hide xs-mx1 xs-inline circle fill-white"></div>
+			</div>
+			
+			
 		</div>
 	</body>
 </html>

@@ -44,18 +44,36 @@ a.about-nav__logo{
  		margin: 0px auto;
  		width: 1060px
 	} 
+	
+	.page-intro__navitem{
+	width:70px;
+	height:70px;
+}
+
 }
 
 @media (min-width:52rem) {
 	.container {
 	    margin: 0px 20px;
 	}
+	
+	.page-intro__navitem{
+	width:70px;
+	height:70px;
+}
+
+
 }
 
 @media (min-width:40rem) {
 	.container{
 		margin: 0px 16px;
 	}
+	
+	.page-intro__navitem{
+	width:50px;
+	height:50px;
+}
 }
 
 .container{
@@ -64,7 +82,7 @@ a.about-nav__logo{
 	 width: auto;
 }
 
-.page-intro-background{
+.page-intro__background{
 	background-image: url("../images/WFM.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -74,7 +92,7 @@ a.about-nav__logo{
 }
 
 .page-intro__title{
-	background:linear-gradient(to right, #f1299b, #6645DD);
+	background:linear-gradient(to right, #f1299b, #8B7CF7);
 }
 
 .page-intro__description{
@@ -85,4 +103,77 @@ a.about-nav__logo{
 
 #page-intro__title{
 	margin-left:12px;
+}
+
+
+/* top module */
+
+.page-top__iphone{
+	background: url("../images/iphone.png") center center;	
+}
+
+/* gif nav */
+
+.page-intro__navitem:nth-child(1){
+	background:url("../images/angie_final.png") no-repeat center top;
+	background-size: 70px 70px;
+	border:2px solid rgba(0,0,0,0);
+}
+
+.page-intro__navitem:nth-child(1):hover{
+	background:url("../images/angie_final.gif") no-repeat center top;
+	background-size: 70px 70px;
+	border:2px solid #F43192;
+}
+
+
+.page-intro__navitem:nth-child(2){
+	background:url("../images/essence_final.png") no-repeat center top;
+	background-size: 70px 70px;
+	border:2px solid rgba(0,0,0,0);
+}
+
+.page-intro__navitem:nth-child(2):hover{
+	background:url("../images/essence_final.gif") no-repeat center top;
+	background-size: 70px 70px;
+	border:2px solid #F43192;
+}
+
+.page-intro__navitem:nth-child(3){
+	background:url("../images/jason_final.png") no-repeat center top;
+	background-size: 70px 70px;
+	border:2px solid rgba(0,0,0,0);
+}
+
+.page-intro__navitem:nth-child(3):hover{
+	background:url("../images/jason_final.gif") no-repeat center top;
+	background-size: 70px 70px;
+	border:2px solid #F43192;
+}
+
+.page-intro__navitem:nth-child(4){
+	background:url("../images/liz_final_edited.png") no-repeat center top;
+	background-size: 70px 70px;
+	border:2px solid rgba(0,0,0,0);
+}
+
+.page-intro__navitem:nth-child(4):hover{
+	background:url("../images/liz_final_edited.gif") no-repeat center top;
+	background-size: 70px 70px;
+	border:2px solid #F43192;
+}
+
+.page-intro__navitem.selected{
+	background-color:#F43192 !important;
+	border: 2px solid #F43192;
+}
+
+
+.page-intro__navdot.selected{
+	background-color:#F43192 !important;
+}
+
+.page-intro__navdot{
+	width:8px;
+	height:8px;
 }
